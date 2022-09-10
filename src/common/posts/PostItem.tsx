@@ -8,12 +8,16 @@ export const PostItem = (props) => {
 	}
     return (
         <div>
-            <div className="posts__box">
-			<ul className="posts__list">
-				<li className="list__item">
-					<div className="item__title" onClick={() => {
-						openText()}}>Title {id}</div>
-					<div className="item__text" ref={postText}>{body}</div>
+            <div className="post--box">
+			<ul className="post--list">
+				<li className="post--item">
+					<div className="post--title" 
+                        onClick={() => {
+						openText()}}>Title {id}
+                    </div>
+					<div className="post--text" 
+                        ref={postText}>{body}
+                    </div>
 				</li>
 			</ul>
 		</div>
