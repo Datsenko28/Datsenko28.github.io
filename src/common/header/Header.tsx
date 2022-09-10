@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-
+import './index.scss';
 type Props = {
     title: string
 }

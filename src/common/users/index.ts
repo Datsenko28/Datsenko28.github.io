@@ -1,3 +1,3 @@
-import {Users} from './Users';
+import {UsersPage} from './UsersPage';
 
-export { Users }
+export { UsersPage }

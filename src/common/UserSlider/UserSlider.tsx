@@ -1,5 +1,5 @@
 import React, {FC} from "react"
-import "./footer.scss";
+import "./index";
 
 type Props = {
 	btnNext: string

@@ -1,0 +1,29 @@
+.user__item {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333348;
+    border-radius: 40px;
+    height: 370px;
+    max-width: 370px;
+    flex-direction: column;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.item__info {
+    font-size: 24px;
+}
+.user__btn {
+	background: #52519d;
+	border-radius: 40px;
+	color: white;
+	border: none;
+	padding: 16px 32px;
+	font-size: 16px;
+	font-family: "Sora-600";
+	margin-top: 48px;
+	cursor: pointer;
+}
