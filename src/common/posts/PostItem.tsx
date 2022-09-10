@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Users = () => {
+export const PostItem = () => {
     return (
         <div>
-            <p>Users</p>
+            
         </div>
     );
 };

@@ -1,17 +1,23 @@
+import React, {FC} from "react"
 import "./footer.scss";
 
-export const Footer = () => {
+type Props = {
+	btnNext: string
+	btnPrev: string
+}
+export const UserSlider:FC<Props> = (props) => {
+	const {btnNext, btnPrev} = props
 	return (
-		<footer className="footer">
-			<div className="footer--line">
+		<footer className="slider">
+			<div className="slider--line">
 				<div className="line--item">
 					<button className="item--el" onClick={() => {
-					}}>Previous</button>
+					}}>{btnPrev}</button>
 				</div>
 				
                 <div className="line--item" >
 				    <button className="item--el" onClick={() => {
-				    }}>Next</button>
+				    }}>{btnNext}</button>
 				</div>
 			</div>
 		</footer>
