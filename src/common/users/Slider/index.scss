@@ -1,0 +1,26 @@
+
+.slider {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 32px auto;
+}
+.slider-next{
+	justify-content: flex-end;
+}
+.row__item {
+	display: flex;
+    align-items: center;
+	cursor: pointer;
+	position: relative;
+	font-size: 24px;
+}
+.item__btn {
+	color: white;
+	border: none;
+	background-color: transparent;
+}
+.row__item .next {
+	justify-content: end ;
+}
+

@@ -1,6 +1,7 @@
 import apiInstance from "./apiBase"
 
 const users = "/users"
+const postsById = "/posts/?userId="
 
 const get = (url: string) => {
     return apiInstance.get(url)
@@ -16,4 +17,11 @@ const get = (url: string) => {
       });
   };
 
-  export {getUsers};
+  const getPostsById = (id:number) => {
+    return get(`${postsById}${id}`)
+      .then((response) => {
+        return response;
+      });
+  };
+
+  export {getUsers, getPostsById};

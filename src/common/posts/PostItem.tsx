@@ -1,10 +1,15 @@
 import React, { useRef } from 'react';
 
-export const PostItem = (props) => {
-    const { body, id } = props;
-	const postText = useRef
+type Props = {
+	body: any,
+	id: number
+	userId: number
+}
+export const PostItem = (props:Props) => {
+    const { body, id, userId } = props;
+	const postText = useRef()
 	const openText = () => {
-		postText.current.classList.toggle("open-text");
+		postText?.current.classList.toggle("open-text");
 	}
     return (
         <div>
@@ -13,8 +18,12 @@ export const PostItem = (props) => {
 				<li className="post--item">
 					<div className="post--title" 
                         onClick={() => {
-						openText()}}>Title {id}
+						openText()}}>
+							Title {id} 
                     </div>
+					<div>
+						userid: {userId}
+					</div>
 					<div className="post--text" 
                         ref={postText}>{body}
                     </div>
