@@ -25,3 +25,36 @@
 .with-posts{
     display: flex;
 }
+
+
+// Header
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 65px;
+}
+
+.logo {
+	font-size: 24px;
+	color: white;
+	font-family: "Sora-400";
+}
+.search {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.search__input {
+	background: #333348;
+	border-radius: 40px;
+	width: 248px;
+	height: 70px;
+	border: none;
+	padding: 20px 0px 20px 35px;
+	color: white;
+	font-size: 24px;
+	&::placeholder {
+		color: white;
+		font-size: 24px;
+	}
+}

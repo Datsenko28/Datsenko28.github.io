@@ -27,6 +27,7 @@ export const UsersPage = () => {
             usersRef.current = data;
         })   
     },[])
+    
 
     const handlerPrev = () => {
         const currentPage = page-1
@@ -79,8 +80,16 @@ export const UsersPage = () => {
     }
     const viewWithPost= postId ? "with-posts" : ""
     return (
+        <>
+        <header className="header">
+            <div className="logo">
+                    Lorem ispum
+            </div>
+            <form className="search" >
+                <input onChange={handleInput} type="text" className="search__input" placeholder="Search" name="input" />
+            </form>
+        </header>
         <section className='users'>
-            <input onChange={handleInput} type="text" className="search__input" placeholder="Search" name="input" />
             <div className={viewWithPost} >
                 <div className="users__row">
                     {
@@ -97,6 +106,7 @@ export const UsersPage = () => {
                 )}
             </div>
         </section>
+        </>
     );
 };
 
