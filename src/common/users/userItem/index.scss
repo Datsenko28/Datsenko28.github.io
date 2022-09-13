@@ -1,29 +1,46 @@
 .user__item {
-    flex: 0 1 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #333348;
-    border-radius: 40px;
-    height: 370px;
-    max-width: 370px;
-    flex-direction: column;
-    margin-bottom: 32px;
-    font-size: 14px;
-}
+   flex: 0 1 48%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #333348;
+	border-radius: 40px;
+	height: 370px;
+	flex-direction: column;
+	margin-bottom: 30px;
 
+}
+.item__list{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
 .item__info {
     font-size: 24px;
 }
 .user__btn {
 	background: #52519d;
-	border-radius: 40px;
-	color: white;
-	border: none;
-	padding: 16px 32px;
-	font-size: 16px;
-	font-family: "Sora-600";
-	margin-top: 48px;
-	cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    padding: 20px 44px;
+    font-size: 20px;
+    font-family: "Sora-600";
+    margin-top: 50px;
+    cursor: pointer;
 }
+
+.user__item-small {
+    height: 270px;
+    max-width: 270px;
+    
+}
+
+.user__item-small {
+    .item__info {
+        font-size: 16px;
+    }
+
+}
+
+

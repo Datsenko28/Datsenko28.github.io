@@ -4,8 +4,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import './index.scss';
 type Props = {
-	handlerNext: ()=> {},
-	handlerPrev: ()=> {},
+	handlerNext: ()=> void,
+	handlerPrev: ()=> void,
 	disableNext?: boolean
 	disablePrev?: boolean
 }

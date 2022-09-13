@@ -1,6 +1,16 @@
+.container{
+	max-width: 1470px;
+	display: block;
+	margin: 0 auto;
+}
+
 .users {
-	max-width: 920px;
+	max-width: 870px;
 	margin: 55px auto 0px auto;
+	min-width: 570px;
+}
+.with-posts .users{
+	max-width: 570px;
 }
 .users__flex {
 	display: flex;
@@ -8,12 +18,10 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .users__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 820px;
     margin: 0px auto;
 }
 
@@ -26,15 +34,14 @@
     display: flex;
 }
 
-
-// Header
 .header {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 65px;
+	margin-bottom: 55px;
 }
 
-.logo {
+.title {
 	font-size: 24px;
 	color: white;
 	font-family: "Sora-400";
@@ -48,7 +55,7 @@
 	background: #333348;
 	border-radius: 40px;
 	width: 248px;
-	height: 70px;
+	height: 40px;
 	border: none;
 	padding: 20px 0px 20px 35px;
 	color: white;

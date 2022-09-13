@@ -1,0 +1,43 @@
+.posts {
+    max-width: 770px;
+    flex: 0 1 60%;
+    padding: 108px 150px;
+    border-radius: 40px;
+    background: #333348;
+    margin: 0 16px;
+}
+
+.post--item {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #4c4c6a;
+}
+
+.post--title {
+    font-size: 36px;
+    font-family: "Sora-600";
+    cursor: pointer;
+}
+
+.post--text {
+    font-size: 18px;
+    display: none;
+}
+
+.close--button {
+    max-width: 145px;
+    background: #52519d;
+    border-radius: 38px;
+    color: white;
+    border: none;
+    padding: 10px 32px;
+    font-size: 18px;
+    font-family: "Sora-600";
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.open-text {
+    display: block;
+}
