@@ -1,31 +1,61 @@
-.container{
+.container {
 	max-width: 1470px;
 	display: block;
 	margin: 0 auto;
+	padding: 0 32px;
+
+	@media (max-width: 760px) {
+		padding: 0 16px;
+	}
 }
 
 .users {
+	transition: .75s;
 	max-width: 870px;
 	margin: 55px auto 0px auto;
 	min-width: 570px;
-}
-.with-posts .users{
-	max-width: 570px;
-}
-.users__path {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px auto;
+
+	@media (max-width: 760px) {
+		flex-wrap: wrap;
+		min-width: 260px;
+		max-width: unset;
+	}
 }
 
-.users__path .user__item:nth-child(odd){
-    margin-right: 16px;
-    
+.with-posts {
+	display: flex;
+
+	.users {
+		// transform: translateY(10px);
+		max-width: 570px;
+		max-height: 520px;
+		@media (max-width: 760px) {
+			max-width: unset;
+			max-height: unset;
+		}
+		@media (max-width: 520px) {
+			max-width: unset;
+			display: block;
+			margin: 0 auto;
+			max-height: unset;
+		}
+	}
+	@media (max-width: 520px) {
+	
+		display: block;
+		margin: 0 auto;
+	}
 }
 
-.with-posts{
-    display: flex;
+
+.users__path .user__item:nth-child(odd) {
+	margin-right: 16px;
+
 }
 
 .header {
@@ -40,11 +70,13 @@
 	color: white;
 	font-family: "Sora-400";
 }
+
 .search {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
+
 .search__input {
 	background: #333348;
 	border-radius: 40px;
@@ -54,6 +86,7 @@
 	padding: 20px 0px 20px 35px;
 	color: white;
 	font-size: 24px;
+
 	&::placeholder {
 		color: white;
 		font-size: 24px;

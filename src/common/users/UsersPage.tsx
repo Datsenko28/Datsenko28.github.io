@@ -75,6 +75,7 @@ export const UsersPage = () => {
     }
     const handlePost = (id: number) => {
         setPostId(id)
+        setUsers(users)
     }
     const handleClosePosts = () => {
         setPostId(0)
@@ -96,12 +97,10 @@ export const UsersPage = () => {
             </header>
             <section className={classNames({ 'with-posts': Boolean(postId) })}  >
                 <div className='users'  >
-                    <div className="users__path">
-                        {
-                            users.map(user => <UserItem key={user.id}  
-                                {...user} withPosts={Boolean(postId)} handlePost={handlePost} />)
-                        }
-                    </div>
+                    {
+                        users.map(user => <UserItem key={user.id}
+                            {...user} withPosts={Boolean(postId)} handlePost={handlePost} />)
+                    }
                 </div>
                 {postId && (
                     <PostsList id={postId} handleClosePosts={handleClosePosts} />

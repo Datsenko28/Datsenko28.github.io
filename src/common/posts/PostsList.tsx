@@ -19,7 +19,8 @@ export const PostsList = ({ id, handleClosePosts }: Props) => {
 
     useEffect(() => {
         getPostsById(id).then(data => {
-            setPosts(data)
+            setPosts(data.slice(5))
+
         })
     }, [id])
 

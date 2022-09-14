@@ -10,6 +10,11 @@
 	flex-direction: column;
 	margin-bottom: 30px;
 
+    @media (max-width: 760px) {
+	flex: 0 1 100%;
+    }
+   
+
 }
 .item__list{
     list-style-type: none;
@@ -33,10 +38,6 @@
 .user__item-small {
     height: 270px;
     max-width: 270px;
-    
-}
-
-.user__item-small {
     .about__item {
         font-size: 20px;
     }
@@ -46,7 +47,8 @@
         border: none;
         padding: 15px 35px;
     }
-
+    @media (max-width: 520px) {
+        max-width: unset;
+        }
 }
-
 

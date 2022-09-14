@@ -22,6 +22,9 @@ export const PostItem = (props: Props) => {
 						<div className="post__title" onClick={openText}>
 							Title {id}
 						</div>
+						{/* <div>
+							userid: {userId}
+						</div> */}
 						<div className="post__text"
 							ref={postText}>{body}
 						</div>
