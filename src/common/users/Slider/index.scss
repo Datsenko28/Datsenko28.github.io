@@ -8,7 +8,7 @@
 .slider-next{
 	justify-content: flex-end;
 }
-.row__item {
+.path__item {
 	display: flex;
     align-items: center;
 	cursor: pointer;
@@ -20,7 +20,7 @@
 	border: none;
 	background-color: transparent;
 }
-.row__item .next {
+.path__item .next {
 	justify-content: end ;
 }
 

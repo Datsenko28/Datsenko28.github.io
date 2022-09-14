@@ -9,14 +9,14 @@ export const UserSlider:FC<Props> = (props) => {
 	const {btnNext, btnPrev} = props
 	return (
 		<footer className="slider">
-			<div className="slider--line">
-				<div className="line--item">
-					<button className="item--el" onClick={() => {
+			<div className="slider__line">
+				<div className="slider__item">
+					<button className="slider__btn" onClick={() => {
 					}}>{btnPrev}</button>
 				</div>
 				
-                <div className="line--item" >
-				    <button className="item--el" onClick={() => {
+                <div className="slider__item" >
+				    <button className="slider__btn" onClick={() => {
 				    }}>{btnNext}</button>
 				</div>
 			</div>

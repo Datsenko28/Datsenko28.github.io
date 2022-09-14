@@ -26,7 +26,7 @@ export const PostsList = ({ id, handleClosePosts }: Props) => {
     return (
         <>
             <div className="posts">
-                <button className='close--button' onClick={handleClosePosts}>close</button>
+                <button className='close__button' onClick={handleClosePosts}>close</button>
                 {
                     posts?.map(post => <PostItem key={post.id} {...post} />)
                 }

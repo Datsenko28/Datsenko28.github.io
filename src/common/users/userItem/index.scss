@@ -15,16 +15,16 @@
     list-style-type: none;
     padding-inline-start: 0px;
 }
-.item__info {
+.about__item {
     font-size: 24px;
 }
 .user__btn {
-	background: #52519d;
+	color: white;
+    background: #52519d;
     border-radius: 40px;
-    color: white;
     border: none;
     padding: 20px 44px;
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Sora-600";
     margin-top: 50px;
     cursor: pointer;
@@ -37,8 +37,14 @@
 }
 
 .user__item-small {
-    .item__info {
-        font-size: 16px;
+    .about__item {
+        font-size: 20px;
+    }
+    .user__btn {
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+        padding: 15px 35px;
     }
 
 }

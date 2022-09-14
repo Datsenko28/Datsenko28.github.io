@@ -17,13 +17,13 @@ export const Slider = (props: Props) => {
     return (
             <section className={classCustom}>
 				{ !disablePrev && (
-				<div className="row__item" onClick={handlerPrev}>
+				<div className="path__item" onClick={handlerPrev}>
 				    <ArrowBackIosIcon/>
 					<button className="item__btn" >Previous</button>
 				</div>
 				)} 
 				{!disableNext && (
-				<div className="row__item next" onClick={handlerNext}>
+				<div className="path__item next" onClick={handlerNext}>
 					<button className="item__btn" >Next</button>
 					<ArrowForwardIosIcon/>
 				</div>

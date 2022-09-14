@@ -14,12 +14,20 @@ export const UserItem = (props: Props ) => {
 	return (
 		<div className={classNames("user__item", {'user__item-small': withPosts })}>
 			<ul className="item__list" >
-				<li className="item__info">{name}</li>
-				<li className="item__info">{email}</li>
-				<li className="item__info">{phone}</li>
-				<li className="item__info">{id}</li>
+				<li className="about__item">
+					{name}
+				</li>
+				<li className="about__item">
+					{email}
+				</li>
+				<li className="about__item">
+					{phone}
+				</li>
+				<li className="about__item">
+					{id}
+				</li>
 			</ul>
-			<button className="user__btn" onClick={()=>handlePost(id)}>Open</button>
+			<button className="user__btn" onClick={()=>handlePost(id)}>Open post</button>
 		</div>
 	)
 }

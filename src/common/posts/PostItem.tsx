@@ -11,21 +11,18 @@ export const PostItem = (props: Props) => {
 	const postText = useRef<HTMLDivElement & HTMLElement>(null)
 	const openText = () => {
 		if (postText.current) {
-			postText?.current?.classList?.toggle("open-text");
+			postText?.current?.classList?.toggle("text");
 		}
 	}
 	return (
 		<div>
-			<div className="post--box">
-				<ul className="post--list">
-					<li className="post--item">
-						<div className="post--title" onClick={openText}>
+			<div className="post__container">
+				<ul className="post__list-elements">
+					<li className="post__item">
+						<div className="post__title" onClick={openText}>
 							Title {id}
 						</div>
-						<div>
-							userid: {userId}
-						</div>
-						<div className="post--text"
+						<div className="post__text"
 							ref={postText}>{body}
 						</div>
 					</li>

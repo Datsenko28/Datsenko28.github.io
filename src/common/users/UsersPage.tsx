@@ -57,7 +57,7 @@ export const UsersPage = () => {
 
     }
 
-    const handleInput = (event: React.SyntheticEvent) => {
+    const inputHand = (event: React.SyntheticEvent) => {
         let value = (event.target as HTMLInputElement).value;
         console.log(value)
         if (users && value.length > 0) {
@@ -87,27 +87,32 @@ export const UsersPage = () => {
                     Users
                 </div>
                 <form className="search" >
-                    <input onChange={handleInput} type="text" className="search__input" placeholder="Search" name="input" />
+                    <input onChange={inputHand}
+                        type="text"
+                        className="search__input"
+                        placeholder="Search"
+                        name="input" />
                 </form>
             </header>
             <section className={classNames({ 'with-posts': Boolean(postId) })}  >
-                    <div className='users'  >
-                        <div className="users__row">
-                            {
-                                users.map(user => <UserItem key={user.id}  {...user} withPosts={Boolean(postId)} handlePost={handlePost} />)
-                            }
-                        </div>
+                <div className='users'  >
+                    <div className="users__path">
+                        {
+                            users.map(user => <UserItem key={user.id}  
+                                {...user} withPosts={Boolean(postId)} handlePost={handlePost} />)
+                        }
                     </div>
-                    {postId && (
-                        <PostsList id={postId} handleClosePosts={handleClosePosts} />
-                    )}
-               
+                </div>
+                {postId && (
+                    <PostsList id={postId} handleClosePosts={handleClosePosts} />
+                )}
+
             </section>
             <Slider
-                    disablePrev={page === 0}
-                    disableNext={(page + 1) * usersPerPage > usersRef.current.length}
-                    handlerNext={handlerNext}
-                    handlerPrev={handlerPrev} />
+                disablePrev={page === 0}
+                disableNext={(page + 1) * usersPerPage > usersRef.current.length}
+                handlerNext={handlerNext}
+                handlerPrev={handlerPrev} />
         </div>
     );
 };
